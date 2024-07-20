@@ -23,21 +23,21 @@ function Home() {
 
         <div className="social-links">
           <a
-            href="https://github.com/username"
+            href="https://github.com/Abhik4004"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/username"
+            href="https://www.linkedin.com/in/abhik-ghosh-27b3632a0/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://instagram.com/username"
+            href="https://www.instagram.com/artgo_2004/"
             target="_blank"
             rel="noopener noreferrer"
           >
