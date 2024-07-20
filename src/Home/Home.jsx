@@ -1,5 +1,6 @@
 import "./Home.css";
 import { GiCoffeePot } from "react-icons/gi";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Home() {
   return (
@@ -13,12 +14,36 @@ function Home() {
         </p>
 
         <p className="me">
-          Hi everyone! I'm a full-time student with a passion for web
-          development and machine learning. I've worked on numerous projects,
+          Hi everyone! I am a full-time student with a passion for web
+          development and machine learning. I ve worked on numerous projects,
           which you can check out in my projects section. Beyond the technical
-          realm, I'm also a guitarist and a Kung Fu master. You could say I'm a
-          true Renaissance Nerd!
+          realm, I am also a guitarist and a Kung Fu master. You could say I am
+          a true Renaissance Nerd!
         </p>
+
+        <div className="social-links">
+          <a
+            href="https://github.com/username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/in/username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://instagram.com/username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </div>
       </div>
     </>
   );

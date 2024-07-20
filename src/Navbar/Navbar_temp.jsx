@@ -19,7 +19,7 @@ function Navbar() {
             <a href="/project">
               <li>Projects</li>
             </a>
-            <a href="#">
+            {/* <a href="#">
               <li>Experience</li>
             </a>
             <a href="#">
@@ -27,7 +27,7 @@ function Navbar() {
             </a>
             <a href="#">
               <li>Contact</li>
-            </a>
+            </a> */}
           </ul>
         </div>
       </nav>
