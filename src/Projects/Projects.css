@@ -1,62 +1,126 @@
-/* projects.css */
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-.projects {
-  margin-top: 5rem;
-  padding: 0 1rem;
-  font-family: "Helvetica", sans-serif;
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .project-list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .project-item {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-item h3 {
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  color: #444;
+  margin-bottom: 10px;
 }
 
-.project-item p {
-  margin-bottom: 1rem;
-  color: #555;
+.project-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
 }
 
-.project-item a {
-  display: inline-block;
-  margin-right: 1rem;
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.project-link {
   text-decoration: none;
-  color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.project-item a:hover {
-  text-decoration: underline;
+.live-link {
+  background-color: #007bff;
+  color: #fff;
 }
 
-/* Media Query for Mobile Screens */
-@media screen and (max-width: 600px) {
-  .projects {
-    padding: 0.5rem;
+.live-link:hover {
+  background-color: #0056b3;
+}
+
+.github-link {
+  background-color: #24292e;
+  color: #fff;
+}
+
+.github-link:hover {
+  background-color: #444d56;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .projects-title {
+    font-size: 1.5rem;
   }
 
   .project-item {
-    padding: 0.8rem;
+    padding: 15px;
   }
 
-  .project-item h3 {
-    font-size: 1.3rem;
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+  }
+
+  .project-link {
+    padding: 8px 12px;
   }
 }
 
-.title {
-  text-align: center;
-  margin-bottom: 2rem;
+@media (max-width: 400px) {
+  .projects-container {
+    padding: 15px;
+  }
+
+  .projects-title {
+    font-size: 1.25rem;
+  }
+
+  .project-item {
+    padding: 10px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.75rem;
+  }
+
+  .project-link {
+    padding: 6px 10px;
+  }
 }
